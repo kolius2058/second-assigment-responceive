@@ -1,5 +1,5 @@
 
-* {
+* { font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,6 +43,19 @@ list-style: none;
 .nav-left a.grey{
   color: #a5a2a2;
 }
+@media screen and (max-width: 576px)
+{
+.nav-items ul{
+ display: none;
+}
+.material-icons{
+display: flex;
+/* align-self: flex-end; */
+justify-content: end;
+}
+}
+  
+
 
   /* section2 */
 .banner{
@@ -78,9 +91,17 @@ max-width: 1280px;
 }
 .banner img{
   margin-top:60%;
-  display: block
+  display: flex;
 }
 
+@media screen and (max-width:576){
+  .banner img{
+    flex-direction: column-reverse;
+  }
+  .banner img div{
+    width: 100%;
+  }
+}
 /* scetion3 */
 
 
@@ -101,19 +122,16 @@ max-width: 1240px;
     text-align: center;
     /* align-content: center; */
     margin-top:15%;
-    font-size: 50px;
+    font-size: 30px;
   }
   .subtitle{
     text-align: center;
-    font-size:20px ;
+    font-size:12px ;
     font-weight: bold;
+    color: #a5a2a2;
   }
 /* card */
   .container-card{
-/* display: flex;
-justify-content: center;
-align-content: center;
-flex-wrap: wrap; */
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 15px;
@@ -138,5 +156,89 @@ padding:0;
   justify-content: center;
   font: bold;
   font-size: 14px;
+  
   height: 10%;
   }
+@media screen and (max-width:576px) {
+  .container-card{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+  /* section3 */
+  .section{
+    background-color:white;
+    margin-top: 10%;
+    display: flex;
+   column-gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 20px 40px;
+ max-width: 1290px;
+  /* max-width: fit-content; */
+  margin-left: 22%;
+  margin-right: 12%;
+  /* display: block; */
+  border: 5px;
+  
+
+  }
+  .image-area{
+    /* position: absolute; */
+    position: relative;
+    flex-direction: column;
+    flex: 2;
+    max-width:500px;
+    display: block;
+  
+  }
+  .image-area img{
+    /* width: 95%; */
+    height: auto;
+    display: flex;
+  
+  
+  }
+
+  .badge{
+    position: absolute;
+    top: -120px;
+    right: -90px;
+    width: 300px;
+    max-width: fit-content;
+  }
+
+  .text-area{
+  max-width: 400px;
+flex: 1;
+
+  }
+
+
+  .header-area{
+display: flex;
+/* justify-content: center; */
+align-content: center;
+    font-size: 40px;
+   
+margin-bottom: 50px;
+  }
+
+  .text-area ul {
+/* padding-left: 10px; */
+color: #555;
+  }
+.text-area ul li{
+  color: #a5a2a2;
+margin-bottom: 15px;
+}
+
+/* section 5 */
+.title-our h1{
+ display: flex;
+  justify-content: center;
+  font-size: 40px;
+
+}
+
