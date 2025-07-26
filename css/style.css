@@ -239,6 +239,29 @@ margin-bottom: 15px;
  display: flex;
   justify-content: center;
   font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
+/* section6 */
+.column area{
+background-color: aliceblue;
+  margin-top: 30px;
+  margin: -20%;
+}
+.column{
+margin-top: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(1,1fr); */
+  gap: 20px;
+  border: 5px;
+  border-radius: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.area-right{
+  display: flex;
+  flex-direction: column-reverse;
+}
